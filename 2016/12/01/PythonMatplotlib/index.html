@@ -84,16 +84,28 @@
 
 
 
-<meta name="description" content="##用python画图##">
+<meta name="description" content=":title 用python画图
+##用python画图##
+###修改xticks, yticks中的字体###对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
+首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="杨骁">
 <meta property="og:url" content="http://yoursite.com/2016/12/01/PythonMatplotlib/index.html">
 <meta property="og:site_name" content="杨骁">
-<meta property="og:description" content="##用python画图##">
-<meta property="og:updated_time" content="2016-12-01T09:27:06.000Z">
+<meta property="og:description" content=":title 用python画图
+##用python画图##
+###修改xticks, yticks中的字体###对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
+首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/">
+<meta property="og:updated_time" content="2016-12-01T09:50:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="杨骁">
-<meta name="twitter:description" content="##用python画图##">
+<meta name="twitter:description" content=":title 用python画图
+##用python画图##
+###修改xticks, yticks中的字体###对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
+首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/">
 
 
 
@@ -311,7 +323,13 @@
       
 
       
-        <p>##用python画图##</p>
+        <p>:title 用python画图</p>
+<p>##用python画图##</p>
+<p>###修改xticks, yticks中的字体###<br>对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。</p>
+<p>首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontProperties</div><div class="line">fp=FontProperties(fname=<span class="string">r'/Library/Fonts/Arial.ttf'</span>,size=<span class="number">16</span>)</div></pre></td></tr></table></figure>
+<p>接下来就可以修改 “xticks” 中的字体了。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -334,22 +352,6 @@
     <footer class="post-footer">
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/01/matplotlib/" rel="prev" title="matplotlib">
-                matplotlib <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -405,7 +407,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
