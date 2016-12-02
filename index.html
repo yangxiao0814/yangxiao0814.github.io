@@ -327,13 +327,14 @@
       
         
           
-            <p>#用python画图#</p>
-<p>##修改xticks, yticks中的字体##</p>
+            <p>#用python画图</p>
+<p>##修改xticks, yticks中的字体</p>
 <p>对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。</p>
 <p>首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontProperties</div><div class="line">fp=FontProperties(fname=<span class="string">r'/Library/Fonts/Arial.ttf'</span>,size=<span class="number">16</span>)</div></pre></td></tr></table></figure>
 <p>接下来就可以修改 “xticks” 中的字体了。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
+
           
         
       

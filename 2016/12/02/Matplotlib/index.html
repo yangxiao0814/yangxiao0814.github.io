@@ -84,28 +84,28 @@
 
 
 
-<meta name="description" content="#用python画图#
-##修改xticks, yticks中的字体##
+<meta name="description" content="#用python画图
+##修改xticks, yticks中的字体
 对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.">
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.ttf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matplotlib">
 <meta property="og:url" content="http://yangxiao0814.github.io/2016/12/02/Matplotlib/index.html">
 <meta property="og:site_name" content="SPAD">
-<meta property="og:description" content="#用python画图#
-##修改xticks, yticks中的字体##
+<meta property="og:description" content="#用python画图
+##修改xticks, yticks中的字体
 对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.">
-<meta property="og:updated_time" content="2016-12-02T04:03:55.000Z">
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.ttf">
+<meta property="og:updated_time" content="2016-12-02T04:18:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Matplotlib">
-<meta name="twitter:description" content="#用python画图#
-##修改xticks, yticks中的字体##
+<meta name="twitter:description" content="#用python画图
+##修改xticks, yticks中的字体
 对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.">
+12from matplotlib.font_manager import FontPropertiesfp=FontProperties(fname=r&apos;/Library/Fonts/Arial.ttf">
 
 
 
@@ -333,13 +333,14 @@
       
 
       
-        <p>#用python画图#</p>
-<p>##修改xticks, yticks中的字体##</p>
+        <p>#用python画图</p>
+<p>##修改xticks, yticks中的字体</p>
 <p>对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。</p>
 <p>首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontProperties</div><div class="line">fp=FontProperties(fname=<span class="string">r'/Library/Fonts/Arial.ttf'</span>,size=<span class="number">16</span>)</div></pre></td></tr></table></figure>
 <p>接下来就可以修改 “xticks” 中的字体了。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
+
       
     </div>
 
