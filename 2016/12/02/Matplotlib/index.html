@@ -84,25 +84,25 @@
 
 
 
-<meta name="description" content="用python画图基本画图single plot12plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)
+<meta name="description" content="用python画图single plot123plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)ax1.plot(x,y)
 修改xticks, yticks中的字体对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import">
+12from matplotlib.font_mana">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matplotlib">
 <meta property="og:url" content="http://yangxiao0814.github.io/2016/12/02/Matplotlib/index.html">
 <meta property="og:site_name" content="SPAD">
-<meta property="og:description" content="用python画图基本画图single plot12plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)
+<meta property="og:description" content="用python画图single plot123plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)ax1.plot(x,y)
 修改xticks, yticks中的字体对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import">
-<meta property="og:updated_time" content="2016-12-05T06:53:04.000Z">
+12from matplotlib.font_mana">
+<meta property="og:updated_time" content="2016-12-05T06:56:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Matplotlib">
-<meta name="twitter:description" content="用python画图基本画图single plot12plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)
+<meta name="twitter:description" content="用python画图single plot123plt.figure(figsize=(8,6),dpi=80)ax1=plt.subplot(111)ax1.plot(x,y)
 修改xticks, yticks中的字体对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。
 首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。
-12from matplotlib.font_manager import">
+12from matplotlib.font_mana">
 
 
 
@@ -348,13 +348,13 @@
       
 
       
-        <h1 id="用python画图"><a href="#用python画图" class="headerlink" title="用python画图"></a>用python画图</h1><h2 id="基本画图"><a href="#基本画图" class="headerlink" title="基本画图"></a>基本画图</h2><h3 id="single-plot"><a href="#single-plot" class="headerlink" title="single plot"></a>single plot</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">plt.figure(figsize=(<span class="number">8</span>,<span class="number">6</span>),dpi=<span class="number">80</span>)</div><div class="line">ax1=plt.subplot(<span class="number">111</span>)</div></pre></td></tr></table></figure>
+        <h1 id="用python画图"><a href="#用python画图" class="headerlink" title="用python画图"></a>用python画图</h1><h2 id="single-plot"><a href="#single-plot" class="headerlink" title="single plot"></a>single plot</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">plt.figure(figsize=(<span class="number">8</span>,<span class="number">6</span>),dpi=<span class="number">80</span>)</div><div class="line">ax1=plt.subplot(<span class="number">111</span>)</div><div class="line">ax1.plot(x,y)</div></pre></td></tr></table></figure>
 <h2 id="修改xticks-yticks中的字体"><a href="#修改xticks-yticks中的字体" class="headerlink" title="修改xticks, yticks中的字体"></a>修改xticks, yticks中的字体</h2><p>对于在论文中的图表来说，字体是有一定的要求的，所以需要修改。</p>
 <p>首先是定义图片中要用到的字体，比如我常用的就是 “Arial”。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> matplotlib.font_manager <span class="keyword">import</span> FontProperties</div><div class="line">fp=FontProperties(fname=<span class="string">r'/Library/Fonts/Arial.ttf'</span>,size=<span class="number">16</span>)</div></pre></td></tr></table></figure>
 <p>接下来就可以修改 “xticks” 中的字体了。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
-
+<h2 id="matplotlib-中使用-latex"><a href="#matplotlib-中使用-latex" class="headerlink" title="matplotlib 中使用 latex"></a>matplotlib 中使用 latex</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">plt.text(x,y,<span class="string">r"textbf&#123;time&#125;"</span></div></pre></td></tr></table></figure>
       
     </div>
 
@@ -500,7 +500,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用python画图"><span class="nav-number">1.</span> <span class="nav-text">用python画图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本画图"><span class="nav-number">1.1.</span> <span class="nav-text">基本画图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#single-plot"><span class="nav-number">1.1.1.</span> <span class="nav-text">single plot</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改xticks-yticks中的字体"><span class="nav-number">1.2.</span> <span class="nav-text">修改xticks, yticks中的字体</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用python画图"><span class="nav-number">1.</span> <span class="nav-text">用python画图</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#single-plot"><span class="nav-number">1.1.</span> <span class="nav-text">single plot</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改xticks-yticks中的字体"><span class="nav-number">1.2.</span> <span class="nav-text">修改xticks, yticks中的字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib-中使用-latex"><span class="nav-number">1.3.</span> <span class="nav-text">matplotlib 中使用 latex</span></a></li></ol></li></ol></div>
             
 
           </div>
