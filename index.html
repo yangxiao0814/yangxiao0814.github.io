@@ -332,6 +332,9 @@
 <p>就会显示出来对应的示例。</p>
 <p>lenged中调整字体的keyword是”prop”</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ax1.legend(loc=<span class="string">'right'</span>, prop=fp)</div></pre></td></tr></table></figure>
+<h1 id="ticks中的字体"><a href="#ticks中的字体" class="headerlink" title="ticks中的字体"></a>ticks中的字体</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
+<h1 id="label中的字体"><a href="#label中的字体" class="headerlink" title="label中的字体"></a>label中的字体</h1><p>label中的字体的关键字是”fontproperties”</p>
+<p><del>~python<br>ax1.set_ylabel(“Detection Probability”,fontproperties=fp)<br>~</del>python</p>
 
           
         

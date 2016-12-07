@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="matplotlib,python,fontproperties," />
+  <meta name="keywords" content="python,matplotlib,fontproperties," />
 
 
 
@@ -88,7 +88,9 @@
 1ax1.legend()
 就会显示出来对应的示例。
 lenged中调整字体的keyword是”prop”
-1ax1.legend(loc=&apos;right&apos;, prop=fp)">
+1ax1.legend(loc=&apos;right&apos;, prop=fp)
+ticks中的字体12for label in ax1.get_xticklabels():	label.set_fontproperties(fp)
+label中">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Matplotlib中的字体">
 <meta property="og:url" content="http://yangxiao0814.github.io/2016/12/07/Matplotlib中的字体/index.html">
@@ -97,15 +99,19 @@ lenged中调整字体的keyword是”prop”
 1ax1.legend()
 就会显示出来对应的示例。
 lenged中调整字体的keyword是”prop”
-1ax1.legend(loc=&apos;right&apos;, prop=fp)">
-<meta property="og:updated_time" content="2016-12-07T03:32:52.000Z">
+1ax1.legend(loc=&apos;right&apos;, prop=fp)
+ticks中的字体12for label in ax1.get_xticklabels():	label.set_fontproperties(fp)
+label中">
+<meta property="og:updated_time" content="2016-12-07T04:58:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Matplotlib中的字体">
 <meta name="twitter:description" content="legend中的字体legend指的是图中的示例，直接添加
 1ax1.legend()
 就会显示出来对应的示例。
 lenged中调整字体的keyword是”prop”
-1ax1.legend(loc=&apos;right&apos;, prop=fp)">
+1ax1.legend(loc=&apos;right&apos;, prop=fp)
+ticks中的字体12for label in ax1.get_xticklabels():	label.set_fontproperties(fp)
+label中">
 
 
 
@@ -338,6 +344,9 @@ lenged中调整字体的keyword是”prop”
 <p>就会显示出来对应的示例。</p>
 <p>lenged中调整字体的keyword是”prop”</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ax1.legend(loc=<span class="string">'right'</span>, prop=fp)</div></pre></td></tr></table></figure>
+<h1 id="ticks中的字体"><a href="#ticks中的字体" class="headerlink" title="ticks中的字体"></a>ticks中的字体</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> label <span class="keyword">in</span> ax1.get_xticklabels():</div><div class="line">	label.set_fontproperties(fp)</div></pre></td></tr></table></figure>
+<h1 id="label中的字体"><a href="#label中的字体" class="headerlink" title="label中的字体"></a>label中的字体</h1><p>label中的字体的关键字是”fontproperties”</p>
+<p><del>~python<br>ax1.set_ylabel(“Detection Probability”,fontproperties=fp)<br>~</del>python</p>
 
       
     </div>
@@ -361,9 +370,9 @@ lenged中调整字体的keyword是”prop”
       
         <div class="post-tags">
           
-            <a href="/source/tages/matplotlib/" rel="tag"># matplotlib</a>
-          
             <a href="/source/tages/python/" rel="tag"># python</a>
+          
+            <a href="/source/tages/matplotlib/" rel="tag"># matplotlib</a>
           
             <a href="/source/tages/fontproperties/" rel="tag"># fontproperties</a>
           
@@ -502,7 +511,7 @@ lenged中调整字体的keyword是”prop”
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#legend中的字体"><span class="nav-number">1.</span> <span class="nav-text">legend中的字体</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#legend中的字体"><span class="nav-number">1.</span> <span class="nav-text">legend中的字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ticks中的字体"><span class="nav-number">2.</span> <span class="nav-text">ticks中的字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#label中的字体"><span class="nav-number">3.</span> <span class="nav-text">label中的字体</span></a></li></ol></div>
             
 
           </div>
