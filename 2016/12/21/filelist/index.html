@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="SPAD">
 <meta property="og:description" content="&amp;#x8BFB;&amp;#x53D6;&amp;#x4E00;&amp;#x4E2A;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x4E2D;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;12import globfilelist=glob.glob(&amp;#x201C;./R003*.txt&amp;#x201D;)
 &amp;#x8FD9;&amp;#x4E2A;&amp;#x65F6;&amp;#x5019; filelist &amp;#x5C31;&amp;">
-<meta property="og:updated_time" content="2016-12-21T01:08:31.000Z">
+<meta property="og:updated_time" content="2016-12-21T01:18:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="读取一个文件夹中的文件">
 <meta name="twitter:description" content="&amp;#x8BFB;&amp;#x53D6;&amp;#x4E00;&amp;#x4E2A;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x4E2D;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;12import globfilelist=glob.glob(&amp;#x201C;./R003*.txt&amp;#x201D;)
@@ -344,6 +344,10 @@
       
         <h1 id="&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><a href="#&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;" class="headerlink" title="&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;"></a>&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import glob</div><div class="line">filelist=glob.glob(&#x201C;./R003*.txt&#x201D;)</div></pre></td></tr></table></figure>
 <p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019; filelist &#x5C31;&#x88AB;&#x8D4B;&#x503C;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7B26;&#x5408; &#x201C;R003*.txt&#x201D; &#x6587;&#x4EF6;&#x7684;list&#x4E86;&#x3002;</p>
+<h2 id="&#x5173;&#x4E8E;glob"><a href="#&#x5173;&#x4E8E;glob" class="headerlink" title="&#x5173;&#x4E8E;glob"></a>&#x5173;&#x4E8E;glob</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">glob.glob(pathname)</div></pre></td></tr></table></figure>
+<p>Return a possibly-empty list of path names that match pathname, which must be a string containing a path specification. pathname can be either absolute (like /usr/src/Python-1.5/Makefile) or relative (like ../../Tools/<em>/</em>.gif), and can contain shell-style wildcards. Broken symlinks are included in the results (as in the shell).</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">glob.igloc(pathname)</div></pre></td></tr></table></figure>
+<p>Return an iterator which yields the same values as glob() without actually storing them all simultaneously.</p>
 
       
     </div>
@@ -506,7 +510,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#读取一个文件夹中的文件"><span class="nav-number">1.</span> <span class="nav-text">读取一个文件夹中的文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#读取一个文件夹中的文件"><span class="nav-number">1.</span> <span class="nav-text">读取一个文件夹中的文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于glob"><span class="nav-number">1.1.</span> <span class="nav-text">关于glob</span></a></li></ol></li></ol></div>
             
 
           </div>
